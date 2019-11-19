@@ -47,7 +47,7 @@ def main():
         dropWhereColValue=int(sys.argv[6]) 
     
 
-    print('\n参数描述\n文件路径:'+filePath+' \n相似度:'+str(similarRatio)+' \n列名所在行数行号(0是第一行):'+str(headerRow)+'\n归类所用的列名:'+compareColName+' \n 条件删除所需的列名:'+dropWhereColName+' \n删除大于:'+str(dropWhereColValue)+'\n')
+    print('\n参数描述\n文件路径:'+filePath+' \n相似度:'+str(similarRatio)+' \n列名所在行数行号(0是第一行):'+str(headerRow)+'\n归类所用的列名:'+compareColName+' \n条件删除所需的列名:'+dropWhereColName+' \n删除大于:'+str(dropWhereColValue)+'\n')
     #读取excel指定行是列名
     excel_data = pd.read_excel(filePath,header=headerRow)
     #过滤掉价格大于100的行
